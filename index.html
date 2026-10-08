@@ -1,15 +1,76 @@
 <!DOCTYPE html>
 <html lang="da">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./imgs/Logo/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/Logo/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/Logo/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./imgs/Logo/logo-remove-background.png" alt="logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">FORSIDE</a></li>
+                <li><a href="info">INFO</a></li>
+                <li><a href="tips">TIPS</a></li>
+                <li><a href="lande.html">LANDE</a></li>
+                <li><a href="om os">OM OS</a></li>
+            </ul>
+            <button class="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="grid_1-1">
+            <img src="./imgs/Forside/forside_h1.jpg" alt="h1_billede">
+            <H1>Seneca Travels</H1>
 
+            <div class="intro">
+                <p>Seneca travels er for dig der har en rejselyst, men ikke helt ved hvor du skal begynde. Vi hjælper
+                    dig
+                    med at
+                    finde
+                    inspiration og tips til din kommende rejse.</p>
+        </section>
+        </div>
+        <section class="grid_1-1-1">
+            <div>
+                <div class="billede1"><img src="./imgs/Forside/luftballon_forside.jpg" alt="luftballon"> </div>
+                <h2>TIPS OG TRICKS</h2>
+
+            </div>
+            <div>
+                <div class="billede2"> <img src="./imgs/Forside/lande_forside.jpg" alt="lande"></div>
+                <h2>LANDE</h2>
+            </div>
+
+            <div>
+                <div class="billede3"> <img src="./imgs/Forside/solnedgang_forside.jpg" alt="solnedgang"></div>
+                <h2>INSPIRATION</h2>
+            </div>
+
+        </section>
+    </main>
+    <script src="menu.js"></script>
 </body>
 
 </html>
