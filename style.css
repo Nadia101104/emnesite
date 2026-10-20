@@ -5,7 +5,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   background-color: #ffe9f5;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
@@ -33,14 +32,14 @@ header {
 .menu a {
   display: block;
   padding: 10px;
-  color: #ffab7a;
+  color: #ff8d4b;
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
 }
 
 .menu a:hover {
-  color: #ff0000;
+  border: 1px solid #ffb1a7;
 }
 
 @media (max-width: 800px) {
@@ -48,8 +47,81 @@ header {
     display: none;
   }
 }
-body {
-  background-color: #ffab7a;
+*/ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  background-color: #ffe9f5;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+  .logo img {
+    width: 110px;
+    height: 100px;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  @media (width < 800px) {
+    &.active .menu {
+      display: block;
+      background-color: #ffe9f5;
+      position: absolute;
+      top: 94px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    &.active .menu li {
+      margin: 10px 20px;
+    }
+
+    &.active .menu a {
+      font-size: 24px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-right: 20px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+    :hover {
+      border: #9fbd86;
+    }
+  }
+  @media (width < 800px) {
+    display: none;
+  }
 }
 
 .burger {
@@ -90,11 +162,29 @@ body {
 }
 .text_logo {
   font-family: "Italiana", sans-serif;
-  font-weight: 100;
+  font-size: 20px;
   font-style: normal;
   text-align: center;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.text_logo {
+  @media (width>800px) {
+    font-family: "Italiana", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+  }
 }
 
+.orangebaggrund {
+  background-color: #ffab7a;
+}
+.hvidbaggrund {
+  background-color: white;
+}
 /********************INDEX******************/
 
 .grid_1-1 h1 {
@@ -107,6 +197,9 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  margin-top: -10px;
+  justify-self: auto;
+  object-fit: contain;
 }
 .intro p {
   color: white;
@@ -120,6 +213,8 @@ img {
   font-weight: bold;
   font-size: xx-large;
   background-color: #ffe9f5;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .grid_1-1-2 a {
@@ -132,3 +227,4 @@ img {
   padding: 15px;
   border-radius: 20px;
 }
+/*********** AUS + NZ **********/

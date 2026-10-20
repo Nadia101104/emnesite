@@ -3,6 +3,7 @@
 
 
 <head>
+    <meta robot noindex>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
@@ -14,16 +15,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./imgs/Logo/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./imgs/Logo/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./imgs/Logo/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="./imgs/Logo/favicon_io/site.webmanifest">
 </head>
 
-<body>
+<body class="orangebaggrund">
     <header>
         <div class="logo">
             <a href="index.html">
                 <img src="./imgs/Logo/logo-remove-background.png" alt="logo">
             </a>
         </div>
+
         <nav>
             <ul class="menu">
                 <li><a href="index.html">FORSIDE</a></li>
@@ -41,7 +43,7 @@
     </header>
     <main>
         <section class="grid_1-1">
-            <img src="./imgs/Forside/forside_h1.jpg" alt="h1_billede">
+            <img src="./imgs/Forside/forside_h1.webp" alt="h1_billede">
             <H1>Seneca Travels</H1>
 
             <div class="intro">
@@ -54,22 +56,33 @@
         </div>
         <section class="grid_1-1-1">
             <div>
-                <div class="billede1"><img src="./imgs/Forside/luftballon_forside.jpg" alt="luftballon"> </div>
-                <h2>TIPS OG TRICKS</h2>
-
+                <div class="billede1 hover">
+                    <img src="./imgs/Forside/luftballon_forside.webp" alt="luftballon">
+                    <h2>TIPS OG TRICKS</h2>
+                </div>
             </div>
             <div>
-                <div class="billede2"> <img src="./imgs/Forside/lande_forside.jpg" alt="lande"></div>
-                <h2>LANDE</h2>
+                <div class="billede2 hover"><img src="./imgs/Forside/lande_forside.webp" alt="lande">
+                    <a href="lande.html">
+                        <h2>LANDE</h2>
+                    </a>
+                </div>
+
             </div>
 
             <div>
-                <div class="billede3"> <img src="./imgs/Forside/solnedgang_forside.jpg" alt="solnedgang"></div>
-                <h2>INSPIRATION</h2>
+                <div class="billede3 hover"><img src="./imgs/Forside/solnedgang_forside.webp" alt="solnedgang">
+                    <h2>INSPIRATION</h2>
+                </div>
             </div>
-
         </section>
     </main>
+    <footer>
+
+        <p>FIND OS HER</p>
+        <img src="./imgs/Logo/FINDOS.webp" alt="findos">
+
+    </footer>
     <script src="menu.js"></script>
 </body>
 

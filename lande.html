@@ -3,6 +3,7 @@
 
 
 <head>
+    <meta robot noindex>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lande</title>
@@ -17,18 +18,17 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body>
+<body class="orangebaggrund">
     <header>
         <div class="logo">
-            <a href="lande.html">
+            <a href="index.html">
                 <img src="./imgs/Logo/logo-remove-background.png" alt="logo">
             </a>
         </div>
-        <section>
-            <div class="text_logo">
-                <h1>SENECA TRAVELS</h1>
-            </div>
-        </section>
+
+        <a href="index.html">
+            <p class="text_logo">SENECA TRAVELS</p>
+        </a>
 
         <nav>
             <ul class="menu">
@@ -53,22 +53,41 @@
         <section>
             <div class="grid_1-1-2">
                 <div>
-                    <img src="./imgs/Lande/collage_aus_nz.jpg" alt="Australien og NZ">
+                    <img src="imgs/Lande/collage_aus_nz.webp" alt="Australien og NZ">
                     <a href="aus-nz.html">
-                        <h2>Australien og New Zealand</h2>
+                        <div class="hover">
+                            <h2>Australien og New Zealand</h2>
+                        </div>
                     </a>
                 </div>
                 <div>
-                    <img src="./imgs/Lande/bali_lande.jpg" alt="bali">
-                    <h2>Indonesien</h2>
+                    <img src="./imgs/Lande/bali_lande.webp" alt="bali">
+                    <a href="indonesien">
+                        <div class="hover">
+                            <h2>Indonesien</h2>
+                        </div>
+                    </a>
+
                 </div>
                 <div>
-                    <img src="./imgs/Lande/collage_thailand_vietnam.jpg" alt="thailand og vietnam">
-                    <h2>Thailand og Vietnam</h2>
+                    <img src="./imgs/Lande/collage_thailand_vietnam.webp" alt="thailand og vietnam">
+                    <a href="Thailandvietnam">
+                        <div class="hover">
+                            <h2>Thailand og Vietnam</h2>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+
+        <p>FIND OS HER</p>
+        <img src="./imgs/Logo/FINDOS.webp" alt="findos">
+
+    </footer>
+    <script src="menu.js"></script>
 </body>
 
 </html>
